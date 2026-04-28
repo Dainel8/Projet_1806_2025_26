@@ -4,14 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
+    <link rel="icon" type="image/png" href="../../images/logo_vet.svg" />
   </head>
   <body>
     <header>
       <img src="../../images/logo_vet.svg" alt="logo" />
       <h1>Clinique veterinaire de Molse</h1>
-      <h2>Par ce que leur santé, c'est votre bonheur</h2>
+      <h2 aria-label="slogan">Par ce que leur santé, c'est votre bonheur</h2>
     </header>
-    <nav>
+    <nav aria-label="liste de navigation">
       <ul>
         <li>
           <a href="../index.html">Acceuil</a>
@@ -23,19 +24,21 @@
     </nav>
     <main>
       <h2>Contactez-nous :</h2>
-      <label>Nom :</label>
-      <input type="text" name="nom" />
-      <br /><br />
-      <label>Adresse e-mail :</label>
-      <input type="email" name="email" />
-      <br /><br />
-      <label>Sujet :</label>
-      <input type="text" name="sujet" />
-      <br /><br />
-      <label>Message :</label>
-      <input type="text" name="message" />
-      <br /><br />
-      <input type="submit" />
+      <form aria-label="formulaire de contact">
+        <label>Nom :</label>
+        <input type="text" name="nom" />
+        <br /><br />
+        <label>Adresse e-mail :</label>
+        <input type="email" name="email" />
+        <br /><br />
+        <label>Sujet :</label>
+        <input type="text" name="sujet" />
+        <br /><br />
+        <label>Message :</label>
+        <input type="text" name="message" />
+        <br /><br />
+        <input type="submit" />
+      </form>
     </main>
     <footer>
       <p>&copy; 2025 Clinique Vétérinaire de Molsheim — Tous droits réservés</p>
