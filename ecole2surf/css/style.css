@@ -2,25 +2,32 @@
     --primary-color: #0F172A;
     --secondary-color: #1D4ED8;
     --footer-color: #020817;
-    --text-color: #EA580C;
+    --text-highlight: #EA580C;
     --golden-orange: #F59E0B;
-    --secondary-text-color: #E2E8F0;
+    --text-color: #E2E8F0;
     --footer-text-color: #475569;
 }
 
-html, body {
+html{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
 }
 
 header {
+    z-index: 1;
     display: flex;
     position: sticky;
     top: 0;
     background-color: var(--primary-color);
     padding: 0 2em;
-    color: var(--text-color);
+    color: var(--text-highlight);
     justify-content: space-between;
     align-items: center;
     border-bottom: var(--secondary-color) 1px solid;
@@ -33,9 +40,14 @@ header {
 }
 
 #title img{
-    width: 90px;
-    height: 70px;
+    width: 5.5rem;
+    height: 4rem;
     margin-right: 2em;
+}
+
+h1 {
+    font-size: 2.4em;
+    font-weight: 600;
 }
 
 nav {
@@ -49,7 +61,7 @@ nav li {
 }
 
 nav a {
-    color: var(--secondary-text-color);
+    color: var(--text-color);
     text-align: center;
     font-weight: 550;
     padding: 14px 16px;
@@ -64,12 +76,56 @@ nav a:hover {
 
 main {
     background-color: var(--primary-color);
-    height: 80vh;
+}
+
+.hero{
+    height: 50rem;
+    position: relative;
+    color: var(--text-color);
+    font-family: 'Dancing Script', cursive, sans-serif;
+}
+
+h2 {
+    font-size: 5rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.hero-text{
+    position: absolute;
+    top: 1rem;
+    left: 5rem;
+}
+
+.highlight {
+    color: var(--text-highlight);
+}
+
+.hero p{
+    position: absolute;
+    font-size: 1.8rem;
+    right: 2rem;
+    top: 18rem;
+    max-width: 50%;
+}
+
+.hero img{
+    position: absolute;
+    left: 4rem;
+    top: 20rem;
+    width: 30rem;
+    max-width: 33%;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 500;
+    font-family: cursive;
+    color: var(--golden-orange);
 }
 
 footer {
     background-color: var(--footer-color);
-    padding: 10px;
-    width: 100%;
+    padding: 3rem 2rem;
     height: 20vh;
 }
