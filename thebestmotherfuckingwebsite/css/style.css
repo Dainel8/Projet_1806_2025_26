@@ -37,7 +37,7 @@ a{
 }
 
 a:visited{
-    color: #CA1A70;
+    color: #ca1a70;
 }
 
 .mfw{
@@ -61,4 +61,11 @@ li img{
 img{
     max-width: 300px;
     height: auto;
+}
+
+blockquote span:before{
+    content: open-quote;
+    font-size: 3em;
+    line-height: 0;
+    position: relative;
 }
