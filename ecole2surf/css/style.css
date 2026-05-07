@@ -69,8 +69,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: var(--golden-orange);
-    color: var(--secondary-color);
+    background-color: var(--footer-text-color);
     border-radius: 6px;
 }
 
@@ -79,7 +78,7 @@ main {
 }
 
 .hero{
-    height: 50rem;
+    height: 88vh;
     position: relative;
     color: var(--text-color);
     font-family: 'Dancing Script', cursive, sans-serif;
@@ -94,31 +93,56 @@ h2 {
 .hero-text{
     position: absolute;
     top: 1rem;
-    left: 5rem;
+    left: 5vw;
 }
 
 .highlight {
     color: var(--text-highlight);
 }
 
+.hero img{
+    position: absolute;
+    right: 5vw;
+    top: 8rem;
+    width: 30rem;
+    max-width: 33%;
+    border: var(--golden-orange) 4px solid;
+    border-radius: 1rem;
+}
+
 .hero p{
     position: absolute;
     font-size: 1.8rem;
-    right: 2rem;
-    top: 18rem;
+    left: 3rem;
+    top: 20rem;
     max-width: 50%;
 }
 
-.hero img{
+button{
     position: absolute;
-    left: 4rem;
-    top: 20rem;
-    width: 30rem;
-    max-width: 33%;
+    left: 20rem;
+    top: 30rem;
+    padding: 1em 2em;
+    font-size: 1.2rem;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--footer-text-color);
+    color: var(--text-color);
+    padding: 1.2em 2.2em;
+    top: 29.8rem;
+    left: 19.8rem;
+    transition: left 0.2s ease, top 0.2s ease, padding 0.2s ease, background-color 0.2s ease;
 }
 
 h3 {
-    font-size: 2em;
+    font-size: 2rem;
+    margin: 0 3rem;
     font-weight: 500;
     font-family: cursive;
     color: var(--golden-orange);
@@ -126,6 +150,6 @@ h3 {
 
 footer {
     background-color: var(--footer-color);
-    padding: 3rem 2rem;
-    height: 20vh;
+    border-top: var(--secondary-color) 1px solid;
+    height: 12vh;
 }
