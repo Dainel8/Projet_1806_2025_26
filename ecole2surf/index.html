@@ -15,7 +15,7 @@
     <title>Ecole 2 Surf</title>
 </head>
 
-<body>
+<body id="body">
     <header>
         <div id="title">
             <img src="images/art_logo.png" alt="banniere de l'école de surf">
@@ -23,28 +23,43 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Cours</a></li>
-                <li><a href="#">Tarifs</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#hero">Accueil</a></li>
+                <li><a href="#courses">Cours</a></li>
+                <li><a href="#prices">Tarifs</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="hero">
+        <section id="hero">
             <h2 class="hero-text">Apprenez à surfer, <br><span class="highlight">vivez l'océan.</span></h2>
             <img src="images/hero-image.jpg" alt="surfeur sur une vague">
             <p>Des cours pour tous les niveaux,<br>encadrés par des moniteurs passionnés sur les plus belles plages de
                 la côte.</p>
-            <button>Découvrir</button>
+            <button class="discover" onclick="window.location.href='index.html#courses'">Découvrir</button>
         </section>
-        <section class="cours">
+        <section id="courses">
             <h3>Les cours</h3>
+            <div class="card left">
+                <h4>Débutant</h4>
+                <p>Montez sur votre première vague en toute sécurité.<br>
+                    Nos moniteurs vous accompagnent pas à pas, de la plage jusqu'à l'eau.</p>
+            </div>
+            <div class="card right">
+                <h4>Intermédiaire</h4>
+                <p>Affinez votre technique et gagnez en confiance.<br>
+                    Apprenez à lire les vagues et à améliorer vos virages.</p>
+            </div>
+            <div class="card left">
+                <h4>Avancé</h4>
+                <p>Maîtrisez les techniques avancées et explorez les vagues les plus défiants.<br>
+                    Des séances intensives pour les surfeurs expérimentés.</p>
+            </div>
         </section>
-        <section class="tarifs">
+        <section id="prices">
             <h3>Tarifs</h3>
         </section>
-        <section class="contact">
+        <section id="contact">
             <h3>Contact</h3>
         </section>
     </main>
