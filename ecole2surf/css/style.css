@@ -6,6 +6,7 @@
     --text-highlight: #EA580C;
     --card-border: #F59E0B;
     --text-color: #E2E8F0;
+    --exeption-text-color: #94A3B8;
     --footer-text-color: #475569;
 }
 
@@ -205,6 +206,13 @@ h4 {
     padding: 1rem;
     border-radius: 1rem;
     background-color: var(--secondary-color);
+}
+
+#schedule p{
+    align-self: center;
+    margin-top: .4rem;
+    width: 75%;
+    color: var(--exeption-text-color);
 }
 
 footer {
