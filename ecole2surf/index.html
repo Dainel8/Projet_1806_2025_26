@@ -21,6 +21,7 @@
             <img src="images/art_logo.png" alt="banniere de l'école de surf">
             <h1>Ecole 2 Surf</h1>
         </div>
+
         <nav>
             <ul>
                 <li><a href="#hero">Accueil</a></li>
@@ -31,32 +32,38 @@
             </ul>
         </nav>
     </header>
+
     <main>
         <section id="hero">
             <h2 class="hero-text">Apprenez à surfer, <br><span class="highlight">vivez l'océan.</span></h2>
             <img src="images/hero-image.jpg" alt="surfeur sur une vague">
             <p>Des cours pour tous les niveaux,<br>encadrés par des moniteurs passionnés sur les plus belles plages de
                 la côte.</p>
-            <button class="discover" onclick="window.location.href='index.html#courses'">Découvrir</button>
+            <button class="surf" onclick="window.location.href='index.html#courses'">Commencer</button>
         </section>
+
         <section id="courses">
             <h3>Les cours</h3>
+
             <div class="card left">
                 <h4>Débutant</h4>
                 <p>Montez sur votre première vague en toute sécurité.<br>
                     Nos moniteurs vous accompagnent pas à pas, de la plage jusqu'à l'eau.</p>
             </div>
+
             <div class="card right">
                 <h4>Intermédiaire</h4>
                 <p>Affinez votre technique et gagnez en confiance.<br>
                     Apprenez à lire les vagues et à améliorer vos virages.</p>
             </div>
+
             <div class="card left">
                 <h4>Avancé</h4>
                 <p>Maîtrisez les techniques avancées et explorez les vagues les plus défiants.<br>
                     Des séances intensives pour les surfeurs expérimentés.</p>
             </div>
         </section>
+
         <section id="schedule">
             <h3>Horaires</h3>
             <table class="edt">
@@ -103,30 +110,38 @@
             </table>
             <p>Tous les jours sauf jours feriés*</p>
         </section>
+
         <section id="prices">
             <h3>Tarifs</h3>
-            <div>
-                <table>
-                    <tr>
-                        <td><button class="one-course button">Cours découverte</button>
-                        </td>
-                        <td><button class="five-course button">Forfait 5 séances</button>
-                        </td>
-                        <td><button class="unlimited-course button">Forfait saison</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p></p>
-                        </td>
-                        <td>
-                            <p></p>
-                        </td>
-                        <td>
-                            <p></p>
-                        </td>
-                    </tr>
-                </table>
+            <input type="radio" name="tarif" id="discover" checked>
+            <input type="radio" name="tarif" id="package">
+            <input type="radio" name="tarif" id="season">
+
+            <div class="label-container">
+                <label for="discover">Cours démarage</label>
+                <label for="package">Forfait par 5</label>
+                <label for="season">Passe saisonier</label>
+            </div>
+            <div class="info-container">
+                <div class="content-discover">
+                    <p>
+                        Cours de découverte à <span class="highlight">40€</span> :<br>
+                        1 séance de 2h avec matériel inclus, pour les débutants.
+                    </p>
+                </div>
+                <div class="content-package">
+                    <p>
+                        Forfait 5 séances à <span class="highlight">150€</span> :<br>
+                        5 séances de 2h, idéal pour progresser rapidement.
+                    </p>
+                </div>
+                <div class="content-season">
+                    <p>
+                        Forfait saison à <span class="highlight">450€</span> :<br>
+                        Séances illimitées pour les 30 jours qui suivent l'inscription au forfait.<br>
+                        idéal pour les fan de surf déjà experimenté.
+                    </p>
+                </div>
             </div>
         </section>
         <section id="contact">

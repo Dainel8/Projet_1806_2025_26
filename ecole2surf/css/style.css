@@ -10,7 +10,7 @@
     --footer-text-color: #475569;
 }
 
-html{
+html {
     margin: 0;
     padding: 0;
     font-size: 16px;
@@ -43,7 +43,7 @@ header {
     align-items: center;
 }
 
-#title img{
+#title img {
     width: 5.5rem;
     height: 4rem;
     margin-right: 2em;
@@ -78,7 +78,6 @@ nav a:hover {
     color: var(--text-highlight);
     background-color: var(--secondary-color);
     border-radius: 6px;
-    transition: color 0.2s ease, background-color 0.2s ease, border-radius 0.2s ease;
 }
 
 main {
@@ -87,7 +86,7 @@ main {
     flex-direction: column;
 }
 
-#hero{
+#hero {
     height: 88vh;
     position: relative;
     color: var(--text-color);
@@ -100,7 +99,7 @@ h2 {
     color: var(--text-color);
 }
 
-.hero-text{
+.hero-text {
     position: absolute;
     top: 1rem;
     left: 5vw;
@@ -110,7 +109,7 @@ h2 {
     color: var(--text-highlight);
 }
 
-#hero img{
+#hero img {
     position: absolute;
     right: 5vw;
     top: 8rem;
@@ -120,7 +119,7 @@ h2 {
     border-radius: 1rem;
 }
 
-#hero p{
+#hero p {
     position: absolute;
     font-family: cursive, sans-serif;
     font-size: 1.6rem;
@@ -129,7 +128,7 @@ h2 {
     max-width: 50%;
 }
 
-.discover{
+.surf {
     position: absolute;
     left: 20rem;
     top: 67vh;
@@ -143,19 +142,18 @@ h2 {
     transition: color 0.2s ease, background-color 0.2s ease;
 }
 
-.discover:hover {
+.surf:hover {
     color: var(--text-highlight);
     background-color: var(--secondary-color);
-    transition: color 0.2s ease, background-color 0.2s ease;
 }
 
 h3 {
+    align-self: flex-start;
     font-size: 2rem;
     margin: 1rem 0 2rem 4rem;
     font-weight: 500;
     font-family: cursive;
     color: var(--text-highlight);
-    
 }
 
 #courses {
@@ -194,7 +192,7 @@ h4 {
 .edt {
     align-self: center;
     border: 2px solid var(--card-border);
-    color: var(--text-highlight);
+    color: var(--text-color);
     width: 75%;
     height: 6rem;
     border-radius: 1rem;
@@ -204,15 +202,80 @@ h4 {
     text-align: center;
     width: 12.5%;
     padding: 1rem;
-    border-radius: 1rem;
+    border-radius: .5rem;
     background-color: var(--secondary-color);
 }
 
-#schedule p{
+#schedule p {
     align-self: center;
+    font-family: cursive;
     margin-top: .4rem;
     width: 75%;
     color: var(--exeption-text-color);
+}
+
+#prices{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.label-container {
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+}
+
+label {
+    display: inline-block;
+    font-size: 1.2rem;
+    padding: 0.5em 1em;
+    margin: 0.5em;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-family: cursive, sans-serif;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+label:hover{
+    background-color: var(--secondary-color);
+}
+
+.content-discover, .content-package, .content-season {
+  display: none;
+}
+
+#discover:checked ~ .info-container .content-discover {
+    display: inline-block;
+}
+
+#package:checked ~ .info-container .content-package {
+    display: block;
+}
+
+#season:checked ~ .info-container .content-season {
+    display: block;
+}
+
+.info-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 7rem;
+    padding: auto;
+    background-color: var(--secondary-color);
+    border: 2px solid var(--card-border);
+    color: var(--text-color);
+    font-size: larger;
+    border-radius: .5rem;
 }
 
 footer {
