@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+NO:wght@100..400&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-mobile.css">
+    <title>Ecole 2 Surf</title>
+</head>
+
+<body id="body">
+    <header>
+        <div id="title">
+            <img src="images/art_logo.png" alt="banniere de l'école de surf">
+            <h1>Ecole 2 Surf</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#hero">Accueil</a></li>
+                <li><a href="#courses">Cours</a></li>
+                <li><a href="#schedule">Horaires</a></li>
+                <li><a href="#prices">Tarifs</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h2 class="hero-text">Apprenez à surfer, <br><span class="highlight">vivez l'océan.</span></h2>
+            <img src="images/hero-image.jpg" alt="surfeur sur une vague">
+            <p>Des cours pour tous les niveaux,<br>encadrés par des moniteurs passionnés sur les plus belles plages de
+                la côte.</p>
+            <button class="surf" onclick="window.location.href='index.html#courses'">Commencer</button>
+        </section>
+
+        <section id="courses">
+            <h3>Les cours</h3>
+
+            <div class="card left">
+                <h4>Débutant</h4>
+                <p>Montez sur votre première vague en toute sécurité.<br>
+                    Nos moniteurs vous accompagnent pas à pas, de la plage jusqu'à l'eau.</p>
+            </div>
+
+            <div class="card right">
+                <h4>Intermédiaire</h4>
+                <p>Affinez votre technique et gagnez en confiance.<br>
+                    Apprenez à lire les vagues et à améliorer vos virages.</p>
+            </div>
+
+            <div class="card left">
+                <h4>Avancé</h4>
+                <p>Maîtrisez les techniques avancées et explorez les vagues les plus défiants.<br>
+                    Des séances intensives pour les surfeurs expérimentés.</p>
+            </div>
+        </section>
+
+        <section id="schedule">
+            <h3>Horaires</h3>
+            <table class="edt">
+                <tr>
+                    <td>Heure</td>
+                    <td>Lundi</td>
+                    <td>Mardi</td>
+                    <td>Mercredi</td>
+                    <td>Jeudi</td>
+                    <td>Vendredi</td>
+                    <td>Samedi</td>
+                    <td>Dimanche</td>
+                </tr>
+                <tr>
+                    <td>9h-11h</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>13h-15h</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>17h-19h</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td></td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td></td>
+                    <td>X</td>
+                </tr>
+            </table>
+            <p>Tous les jours sauf jours feriés*</p>
+        </section>
+
+        <section id="prices">
+            <h3>Tarifs</h3>
+            <input type="radio" name="tarif" id="discover" checked>
+            <input type="radio" name="tarif" id="package">
+            <input type="radio" name="tarif" id="season">
+
+            <div class="label-container">
+                <label for="discover">Cours démarage</label>
+                <label for="package">Forfait par 5</label>
+                <label for="season">Passe saisonier</label>
+            </div>
+            <div class="info-container">
+                <div class="content-discover">
+                    <p>
+                        Cours de découverte à <span class="highlight">40€</span> :<br>
+                        1 séance de 2h avec matériel inclus, pour les débutants.
+                    </p>
+                </div>
+                <div class="content-package">
+                    <p>
+                        Forfait 5 séances à <span class="highlight">150€</span> :<br>
+                        5 séances de 2h, idéal pour progresser rapidement.
+                    </p>
+                </div>
+                <div class="content-season">
+                    <p>
+                        Forfait saison à <span class="highlight">450€</span> :<br>
+                        Séances illimitées pour les 30 jours qui suivent l'inscription au forfait.<br>
+                        idéal pour les fan de surf déjà experimenté.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="contact">
+        <h4>Contactez-nous</h4>
+        <div>
+            <p>
+                E-mail : contact@ecole2surf.fr<br>
+                Téléphone : 06 01 02 03 04<br>
+                Adresse : Quelquepart en Alsace (probablement) 67000
+            </p>
+            <p id="credits">
+                Site réalisé par Daniel<br>
+                2026
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
