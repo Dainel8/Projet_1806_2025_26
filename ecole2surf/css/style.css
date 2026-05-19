@@ -82,6 +82,8 @@ nav a:hover {
 
 main {
     background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
 }
 
 #hero{
@@ -119,7 +121,8 @@ h2 {
 
 #hero p{
     position: absolute;
-    font-size: 1.8rem;
+    font-family: cursive, sans-serif;
+    font-size: 1.6rem;
     left: 3rem;
     top: 20rem;
     max-width: 50%;
@@ -128,7 +131,7 @@ h2 {
 .discover{
     position: absolute;
     left: 20rem;
-    top: 30rem;
+    top: 67vh;
     padding: 1em 2em;
     font-size: 1.2rem;
     background-color: var(--primary-color);
@@ -147,7 +150,7 @@ h2 {
 
 h3 {
     font-size: 2rem;
-    margin: 1rem 0 2rem 3rem   ;
+    margin: 1rem 0 2rem 4rem;
     font-weight: 500;
     font-family: cursive;
     color: var(--text-highlight);
@@ -157,7 +160,11 @@ h3 {
 #courses {
     display: flex;
     flex-direction: column;
-    height: 88vh;
+}
+
+#schedule{
+    display: flex;
+    flex-direction: column;
 }
 
 .card {
@@ -181,6 +188,23 @@ h4 {
     font-family: cursive;
     margin: .5rem;
     color: var(--text-highlight);
+}
+
+.edt {
+    align-self: center;
+    border: 2px solid var(--card-border);
+    color: var(--text-highlight);
+    width: 75%;
+    height: 6rem;
+    border-radius: 1rem;
+}
+
+.edt td {
+    text-align: center;
+    width: 12.5%;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: var(--secondary-color);
 }
 
 footer {
