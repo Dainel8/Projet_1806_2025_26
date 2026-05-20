@@ -1,0 +1,38 @@
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+
+    nav {
+        font-size: 1.5rem;
+        left: -1.5rem;
+    }
+
+    #presentation {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #presentation h2 {
+        padding-left: 2.5rem;
+    }
+
+    .text {
+        width: 90%;
+    }
+
+    aside {
+        width: 90%;
+    }
+
+    aside ul {
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+
+    aside ul li {
+        width: 25%;
+        text-align: center;
+    }
+}
