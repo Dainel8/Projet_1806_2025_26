@@ -1,13 +1,14 @@
 :root {
     --primary-color: #FFC38B;
-    --primary-hover: #E49F5D;
-    --highlight-color: #8B609F;
+    --secondary-color: #E49F5D;
+    --highlight-color: #693B83;
+    --text-color: #2C1810;
     --footer-background: #6D3B84;
     --footer-text: #FFDCBA;
 }
 
 html {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 body {
@@ -19,6 +20,34 @@ body {
 h1, h2, h3 {
     margin: 0;
     font-family: 'Playfair Display', Georgia, serif;
+}
+
+h1 {
+    margin-bottom: 2rem;
+    font-size: 5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+h2 {
+    width: 100%;
+    margin: 1.5rem;
+    font-size: 2.5rem;
+    color: var(--highlight-color);
+}
+
+h3 {
+    margin: .5rem;
+    font-size: 1.5rem;
+    color: var(--highlight-color);
+}
+
+p {
+    margin: 1.5rem 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.7rem;
+    color: var(--text-color);
 }
 
 header {
@@ -33,13 +62,6 @@ header {
     background-attachment: fixed;
 }
 
-h1 {
-    margin-bottom: 2rem;
-    font-size: 5rem;
-    font-weight: 700;
-    color: var(--primary-color);
-}
-
 header p {
     font-size: 2rem;
     font-weight: 400;
@@ -47,7 +69,46 @@ header p {
 }
 
 main {
+    padding: 2rem;
     background-color: var(--primary-color);
+}
+
+#presentation {
+    padding-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.text {
+    margin-left: 1rem;
+    width: 45%;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+}
+
+aside img {
+    width: 50%;
+    border: 4px solid var(--highlight-color);
+    border-radius: 2rem;
+}
+
+aside ul img {
+    max-width: 1.5rem;
+    border: none;
+    border-radius: 0;
+}
+
+li {
+    list-style: none;
+    font-size: 1.5rem;
+    margin-bottom: .4rem;
 }
 
 footer {
