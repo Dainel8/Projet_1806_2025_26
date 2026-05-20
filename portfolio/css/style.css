@@ -1,10 +1,9 @@
 :root {
-    --header-background: #453477;
-    --primary-color: #500E82;
-    --secondary-color: #7F42AD;
-    --footer-background: #4A0B7B;
-    --footer-text: #2B1A5A;
-    --text-title: #671da1;
+    --primary-color: #FFC38B;
+    --primary-hover: #E49F5D;
+    --highlight-color: #8B609F;
+    --footer-background: #6D3B84;
+    --footer-text: #FFDCBA;
 }
 
 html {
@@ -20,41 +19,29 @@ body {
 }
 
 header {
-    height: 12vh;
-    background-color: var(--header-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('../images/hero.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 h1 {
     margin: 0;
     padding: 1rem;
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: 700;
-    color: var(--text-title);
-}
-
-nav {
-    align-self: center;
+    color: var(--primary-color);
 }
 
 main {
-    width: 100%;
-    height: 80vh;
-    background-color: var(--primary-color);
-    display: flex;
-    flex-direction: column;
 }
 
 footer {
-    position: relative;
-    width: 100%;
-    height: 15vh;
-    background-color: var(--footer-background);
-    color:var(--footer-text);
 }
 
-#credit {
-    text-align: center;
-    position: absolute;
-    bottom: 1rem;
-    right: 2rem;
+#sign {
 }
