@@ -5,6 +5,7 @@
     --text-color: #2C1810;
     --footer-background: #6D3B84;
     --footer-text: #FFDCBA;
+    --sign-color: #AC8CBD;
 }
 
 html {
@@ -52,6 +53,10 @@ p {
 
 .highlight {
     color: var(--highlight-color);
+}
+
+small {
+    font-size: .7rem;
 }
 
 header {
@@ -134,7 +139,41 @@ aside ul img {
 }
 
 footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--footer-background);
+}
+
+#top-footer {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between
+}
+
+#top-footer img {
+    width: 12rem;
+}
+
+footer h3 {
+    margin: 0;
+    padding-top: 2rem;
+    color: var(--footer-text);
+}
+
+footer a {
+    color: var(--secondary-color);
+}
+
+footer p{
+    color: var(--footer-text);
+    margin: 1rem 0 0 3rem;
 }
 
 #sign {
+    margin: 2rem 0;
+    font-size: .8rem;
+    line-height: normal;
+    align-self: center;
+    text-align: center;
+    color: var(--sign-color);
 }
