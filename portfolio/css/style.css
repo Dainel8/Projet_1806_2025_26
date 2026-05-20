@@ -119,16 +119,23 @@ aside {
     width: 45%;
 }
 
-aside img {
+.me {
     width: 50%;
     border: 4px solid var(--highlight-color);
     border-radius: 2rem;
 }
 
+aside ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+aside ul li {
+    width: 50%;
+}
+
 aside ul img {
     max-width: 1.5rem;
-    border: none;
-    border-radius: 0;
 }
 
 #presentation li {
