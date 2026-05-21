@@ -1,11 +1,12 @@
 :root {
+    --title-color: #FFD6B1;
     --primary-color: #FFD6B1;
     --secondary-color: #FFC38B;
+    --link-color: #FFC38B;
     --highlight-color: #3B7176;
     --text-color: #925F31;
     --footer-background: #6D989C;
-    --footer-text: #1E5459;
-    --footer-highlight: #B9D8DB;
+    --footer-text: #B9D8DB;
 }
 
 html {
@@ -18,6 +19,15 @@ body {
     padding: 0;
     font-family: 'Inter', Arial, sans-serif;
 }
+html:has(#DarkModeToggle:checked) body {
+    --primary-color: #925F31;
+    --secondary-color: #58310D;
+    --link-color: #FFEAD7;
+    --highlight-color: #B9D8DB;
+    --text-color: #FFEAD7;
+    --footer-background: #1E5459;
+    #DM {display: none;}
+}
 
 h1, h2, h3 {
     margin: 0;
@@ -28,7 +38,7 @@ h1 {
     margin-bottom: 2rem;
     font-size: 4rem;
     font-weight: 700;
-    color: var(--primary-color);
+    color: var(--title-color);
 }
 
 h2 {
@@ -43,6 +53,23 @@ h3 {
     font-size: 1.7rem;
     color: var(--highlight-color);
 }
+
+input {
+    display: none;
+}
+
+label {
+    position: absolute;
+    top: 93vh;
+    left: 1rem;
+    font-size: 0.6rem;
+    text-align: center;
+    color: var(--primary-color);
+    background-color: var(--text-color);
+    padding: .2rem .4rem;
+    border-radius: .2rem;
+}
+
 
 p {
     margin: 1.5rem 0.5rem;
@@ -79,7 +106,7 @@ header {
 header p {
     font-size: 1.8rem;
     font-weight: 400;
-    color: var(--primary-color);
+    color: var(--title-color);
 }
 
 nav {
@@ -136,10 +163,11 @@ aside ul {
 
 aside ul li {
     width: 50%;
+    font-size: 1.6rem;
 }
 
 aside ul img {
-    max-width: 1.5rem;
+    max-height: 1.5rem;
 }
 
 #presentation li {
@@ -176,18 +204,18 @@ footer {
 
 footer img {
     position: absolute;
-    top: .5rem;
-    right: .5rem;
-    width: 12rem;
+    top: .8rem;
+    right: 1.3rem;
+    width: 10rem;
 }
 
 footer h3 {
     margin: 2rem;
-    color: var(--footer-highlight);
+    color: var(--footer-text);
 }
 
 footer a {
-    color: var(--secondary-color);
+    color: var(--link-color);
 }
 
 footer p{
@@ -201,5 +229,5 @@ footer p{
     line-height: normal;
     align-self: center;
     text-align: center;
-    color: var(--footer-highlight);
+    color: var(--footer-text);
 }
